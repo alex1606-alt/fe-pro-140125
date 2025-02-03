@@ -58,6 +58,53 @@ count();
 
 
 
+const per = {
+    name:"john",
+    age: 25,
+    occupation:"developer"
+};
+for (let key in per) {
+    console.log(per[key]);
+};
+
+
+
+
+
+
+const students = [
+    {name:"alice",
+     age:20,
+     grade:"A"
+    },
+    {name:"bob",
+     age:22,
+     grade:"B"
+
+    },
+    {
+        name:"charli",
+        age:21,
+        grade:"C"
+    }
+];
+for (let student of students) {  
+    for (let key in student) {  
+        console.log(student[key]); 
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
