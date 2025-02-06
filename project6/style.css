@@ -1,0 +1,47 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #333;
+}
+
+.nav li {
+    padding: 10px 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li a:hover {
+    color: yellow;
+}
+
+/* Стили для второго элемента */
+.nav li:nth-child(2) {
+    background-color: darkred;
+}
+
+/* Стиль для всех ссылок в nav */
+header nav a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
