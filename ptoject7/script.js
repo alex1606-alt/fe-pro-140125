@@ -40,3 +40,16 @@ booksArray.forEach(book => {
     tableBody.appendChild(row);
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
