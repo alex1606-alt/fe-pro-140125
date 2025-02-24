@@ -8,15 +8,35 @@ x.addEventListener("click",adVal);
 function adVal(){
     let rt = z.value
     w.innerHTML = rt
-    
-};
+     };
 
 y.addEventListener("click",adVa);
 function adVa(){
-    
-    w.innerHTML = ""
-    
-};
+    let rot = z.value
+    w.innerHTML = rot
+    sessionStorage.setItem("storedText", rot);
+     };
+
+
+
+
+
+
+     
+     
+     
+     let colorPic = document.getElementById("color");
+
+document.body.style.backgroundColor = localStorage.getItem("bgColor") || "#ffffff";
+colorPic.value = localStorage.getItem("bgColor") || "#ffffff";
+
+
+colorPicker.addEventListener("input", () => {
+    let selectedColor = colorPick.value;
+    document.body.style.backgroundColor = selectedColor;
+    localStorage.setItem("bgColor", selectedColor);
+});
+
 
 
 
